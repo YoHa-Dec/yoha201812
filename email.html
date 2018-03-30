@@ -1,287 +1,266 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>我的邮箱</title>
-
     <!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/my.css">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/my.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-	<body>
-		<nav class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">OA系统</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
-        <li><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
-        <li><a href="contents.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
-        <li><a href="tags.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>
-        <li class="active"><a href="email.html"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;我的邮箱</a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-      	<li><img class="user_img img-circle hidden-sm hidden-xs" src="images/touxiang.jpg"/></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理员 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;前台首页</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a></li>
-            <li role="separator"><a href=""><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;我的收藏</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;退出</a></li>
+    <![endif]--></head>
+  
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">OA系统</a></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a>
+            </li>
+            <li>
+              <a href="user_list.html">
+                <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a>
+            </li>
+            <li>
+              <a href="contents.html">
+                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a>
+            </li>
+            <li>
+              <a href="tags.html">
+                <span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a>
+            </li>
+            <li class="active">
+              <a href="email.html">
+                <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;我的邮箱</a>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-		<div class="container">
-			<div class="col-md-3">
-				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-				  <div class="panel panel-default">
-				    <div class="panel-heading" role="tab" id="headingOne">
-				      <h4 class="panel-title">
-				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				         	 最近联系人
-				        </a>
-				      </h4>
-				    </div>
-				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-				      <div class="panel-body">
-				      	<ul class="list-group">
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								  	</ul>
-				      </div>
-				    </div>
-				  </div>
-					<div class="panel panel-default">
-				    <div class="panel-heading" role="tab" id="headingTwo">
-				      <h4 class="panel-title">
-				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-				         	 我的同事
-				        </a>
-				      </h4>
-				    </div>
-				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-				      <div class="panel-body">
-				      	<ul class="list-group">
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								  	</ul>
-				      </div>
-				    </div>
-				  </div>
-					<div class="panel panel-default">
-				    <div class="panel-heading" role="tab" id="headingThree">
-				      <h4 class="panel-title">
-				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-				         	 我的客户
-				        </a>
-				      </h4>
-				    </div>
-				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-				      <div class="panel-body">
-				      	<ul class="list-group">
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-star-empty"></span>
-								    			小星星
-								    		</a>
-								    	</li>
-								  	</ul>
-				      </div>
-				    </div>
-				  </div>
-				
-				</div>
-			</div>
-			
-			<div class="col-md-9">
-				<div class="panel panel-default">
-					  <div class="panel-heading">Panel heading</div>
-					  		<ul class="list-group">
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-list-alt"></span>
-								    			响应式布局阿巴拉股&nbsp;
-								    			<span class="pull-right">
-								    				2018/03/20</span>
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-list-alt"></span>
-								    			响应式布局阿巴拉股
-								    			<span class="pull-right">2018/03/20</span>
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-list-alt"></span>
-								    			响应式布局阿巴拉股
-								    			<span class="pull-right">2018/03/20</span>
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-list-alt"></span>
-								    			响应式布局阿巴拉股
-								    			<span class="pull-right">2018/03/20</span>
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-list-alt"></span>
-								    			响应式布局阿巴拉股
-								    			<span class="pull-right">2018/03/20</span>
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-list-alt"></span>
-								    			响应式布局阿巴拉股
-								    			<span class="pull-right">2018/03/20</span>
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-list-alt"></span>
-								    			响应式布局阿巴拉股
-								    			<span class="pull-right">2018/03/20</span>
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-list-alt"></span>
-								    			响应式布局阿巴拉股
-								    			<span class="pull-right">2018/03/20</span>
-								    		</a>
-								    	</li>
-								    	<li class="list-group-item">
-								    		<a href="#">
-								    			<span class="glyphicon glyphicon-list-alt"></span>
-								    			响应式布局阿巴拉股
-								    			<span class="pull-right">2018/03/20</span>
-								    		</a>
-								    	</li>
-								  </ul>
-					</div>
-					<nav class="text-center">
-						<ul class="pagination">
-							<li>
-								<a href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-								</a>
-							</li>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li>
-								<a href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-			</div>
-		</div>
-	<script src="js/jquery-3.1.0.min.js"></script>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <img class="user_img img-circle hidden-sm hidden-xs" src="images/touxiang.jpg" /></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理员
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <span class="glyphicon glyphicon-screenshot"></span>&nbsp;前台首页</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a>
+                </li>
+                <li role="separator">
+                  <a href="">
+                    <span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-heart"></span>&nbsp;我的收藏</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-off"></span>&nbsp;退出</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse --></div>
+      <!-- /.container-fluid --></nav>
+    <div class="container">
+      <div class="col-md-3">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">最近联系人</a></h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">我的同事</a></h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">我的客户</a></h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-star-empty"></span>小星星</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">Panel heading</div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#">
+                <span class="glyphicon glyphicon-list-alt"></span>响应式布局阿巴拉股&nbsp;
+                <span class="pull-right">2018/03/20</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">
+                <span class="glyphicon glyphicon-list-alt"></span>响应式布局阿巴拉股
+                <span class="pull-right">2018/03/20</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">
+                <span class="glyphicon glyphicon-list-alt"></span>响应式布局阿巴拉股
+                <span class="pull-right">2018/03/20</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">
+                <span class="glyphicon glyphicon-list-alt"></span>响应式布局阿巴拉股
+                <span class="pull-right">2018/03/20</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">
+                <span class="glyphicon glyphicon-list-alt"></span>响应式布局阿巴拉股
+                <span class="pull-right">2018/03/20</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">
+                <span class="glyphicon glyphicon-list-alt"></span>响应式布局阿巴拉股
+                <span class="pull-right">2018/03/20</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">
+                <span class="glyphicon glyphicon-list-alt"></span>响应式布局阿巴拉股
+                <span class="pull-right">2018/03/20</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">
+                <span class="glyphicon glyphicon-list-alt"></span>响应式布局阿巴拉股
+                <span class="pull-right">2018/03/20</span></a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">
+                <span class="glyphicon glyphicon-list-alt"></span>响应式布局阿巴拉股
+                <span class="pull-right">2018/03/20</span></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="text-center">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span></a>
+            </li>
+            <li class="active">
+              <a href="#">1</a></li>
+            <li>
+              <a href="#">2</a></li>
+            <li>
+              <a href="#">3</a></li>
+            <li>
+              <a href="#">4</a></li>
+            <li>
+              <a href="#">5</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="js/jquery-3.1.0.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-	</body>
-	<script>
-		$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
-	</script>
-	
+  </body>
+  <script>$('#myModal').on('shown.bs.modal',
+    function() {
+      $('#myInput').focus()
+    })</script>
+
 </html>
