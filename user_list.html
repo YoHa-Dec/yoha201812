@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 101 Template</title>
+    <title>用户列表</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/my.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,11 +17,6 @@
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-    	.user_img{width: 40px;height: 40px;margin-top: 5px;}
-    	.alert>p{margin-bottom: 10px;}
-    	.header{margin-top: 0;}
-    </style>
   </head>
 	<body>
 		<nav class="navbar navbar-default">
@@ -42,16 +38,16 @@
         <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
         <li class="active"><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
         <li><a href="user_search.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>
+        <li><a href="tags.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>
         <li><a href="email.html"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;我的邮箱</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-      	<li><img class="user_img img-circle" src="images/touxiang.jpg"/></li>
+      	<li><img class="user_img img-circle hidden-sm hidden-xs" src="images/touxiang.jpg"/></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理员 <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;前台首页</a></li>
+            <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;前台首页</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a></li>
             <li role="separator"><a href=""><span class="glyphicon glyphicon-credit-card"></span>&nbsp;账户中心</a></li>
@@ -192,16 +188,20 @@
 		      <div class="modal-body">
 		        <form>
 		        	<div class="form-group">
-						    <label for="exampleInputPassword1">Password</label>
-						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						    <label for="username">用户名</label>
+						    <input type="password" class="form-control" id="username" placeholder="请输入用户名">
 						  </div>
 						  <div class="form-group">
-						    <label for="exampleInputPassword1">Password</label>
-						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						    <label for="password">密码</label>
+						    <input type="password" class="form-control" id="password" placeholder="请输入密码">
 						  </div>
 						  <div class="form-group">
-						    <label for="exampleInputPassword1">Password</label>
-						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						    <label for="surepass">确认密码</label>
+						    <input type="password" class="form-control" id="surepass" placeholder="请确认密码">
+						  </div>
+						  <div class="form-group">
+						    <label for="email">邮箱</label>
+						    <input type="password" class="form-control" id="email" placeholder="请输入邮箱">
 						  </div>
 						  <div class="form-group">
 						    <label for="exampleInputPassword1">选择用户组</label>

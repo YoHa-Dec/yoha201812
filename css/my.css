@@ -1,0 +1,23 @@
+.user_img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+.header{
+    margin-top: 0;
+}
+.mt15{
+    margin-top: 15px;
+}
+.alert>p{
+    margin-bottom: 10px;
+}
+.img60{
+    height: 60px;
+    width: 60px;
+}
+.form-mg15{
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
